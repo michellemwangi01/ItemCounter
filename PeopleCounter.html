@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="PeopleCounter.css" />
+    <title>document</title>
+  </head>
+
+  <body style="background-color: beige">
+    <div class="pageContainer">
+      <h6 id="welcomeUserMsg">welcome</h6>
+      <div
+        id="counterContainer"
+        class="my-3 container border border-2 border-dark"
+      >
+        <div>
+          <h1 class="heading-1 text-center">People Counted</h1>
+          <h2 id="counter" class="heading-2 bg-transparent text-center">0</h2>
+        </div>
+        <div id="buttons" class="text-center">
+          <button
+            style="margin-top: 10px"
+            id="increment-btn"
+            class="btn bg-danger text-light text-center"
+          >
+            INCREMENT
+          </button>
+
+          <button
+            style="margin-top: 10px"
+            id="decrement-btn"
+            class="btn bg-primary text-light text-center"
+          >
+            DECREMENT
+          </button>
+
+          <button
+            style="margin-top: 10px"
+            id="reset-btn"
+            class="btn bg-info text-light text-center"
+          >
+            RESET
+          </button>
+
+          <button
+            id="save-btn"
+            class="btn btn-2 my-3 bg-success text-light text-center"
+            onclick="save()"
+          >
+            SAVE
+          </button>
+        </div>
+        <p id="prevEntries">entries: 5 -7 -12...</p>
+      </div>
+    </div>
+    <script src="PeopleCounter.js"></script>
+  </body>
+</html>
